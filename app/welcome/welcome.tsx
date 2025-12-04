@@ -100,4 +100,30 @@ const resources = [
       </svg>
     ),
   },
+  {
+    href: "https://blog.naver.com/qls1106",
+    text: "블로그",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        className="stroke-gray-600 group-hover:stroke-current dark:stroke-gray-300"
+      >
+        <path
+          d="M4 4h16v16H4V4z"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M9 9h6M9 13h6M9 17h4"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+        />
+      </svg>
+    ),
+  },
 ];
