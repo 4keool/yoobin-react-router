@@ -49,7 +49,7 @@ export function Welcome({ message }: { message: string }) {
 
 const resources = [
   {
-    href: "https://www.notion.so/2b4e21a456ac807c9789fd42972845b1",
+    href: "https://www.notion.so/2e3ad104dcd2809a885ae5c7b2f2838b?source=copy_link",
     text: "노션",
     icon: (
       <svg
