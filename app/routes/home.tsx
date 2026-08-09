@@ -1,10 +1,10 @@
 import type { Route } from "./+types/home";
 import { Welcome } from "../welcome/welcome";
 
-export function meta({ }: Route.MetaArgs) {
+export function meta(_args: Route.MetaArgs) {
   return [
-    { title: "Ryu's Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "유빈 - 링크 모음" },
+    { name: "description", content: "유빈의 링크 모음 서비스입니다." },
   ];
 }
 
