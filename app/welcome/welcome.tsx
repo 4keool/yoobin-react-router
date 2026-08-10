@@ -15,7 +15,7 @@ export function Welcome({ message }: { message: string }) {
             {/* 메인 사진: 원형 프로필 */}
             <img
               src={mainProfile}
-              alt="Our 365 Days"
+              alt="우리의 365일"
               className="relative w-48 h-48 rounded-full object-cover border-[6px] border-slate-900 shadow-2xl transform transition duration-500 group-hover:scale-105"
             />
 
@@ -105,8 +105,8 @@ const resources = [
     text: "블로그",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M4 4h16v16H4V4z" />
-        <path d="M9 9h6M9 13h6M9 17h4" />
+        <path d="M12 20h9" />
+        <path d="M16.5 3.5a2.121 2.121 0 1 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
       </svg>
     ),
   },
