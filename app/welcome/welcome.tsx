@@ -15,7 +15,7 @@ export function Welcome({ message }: { message: string }) {
             {/* 메인 사진: 원형 프로필 */}
             <img
               src={mainProfile}
-              alt="Our 365 Days"
+              alt="우리의 365일"
               className="relative w-48 h-48 rounded-full object-cover border-[6px] border-slate-900 shadow-2xl transform transition duration-500 group-hover:scale-105"
             />
 
