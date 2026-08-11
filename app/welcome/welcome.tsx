@@ -45,7 +45,7 @@ export function Welcome({ message }: { message: string }) {
                     className="group flex items-center gap-4 rounded-xl bg-white/5 p-4 transition-all duration-300 hover:bg-pink-500/10 hover:shadow-lg hover:scale-[1.02] border border-transparent hover:border-pink-500/30"
                     href={href}
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                   >
                     {/* 아이콘 박스: 핑크색 포인트 */}
                     <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-white/10 text-gray-300 transition-colors group-hover:bg-pink-500 group-hover:text-white">
