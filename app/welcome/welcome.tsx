@@ -15,7 +15,7 @@ export function Welcome({ message }: { message: string }) {
             {/* 메인 사진: 원형 프로필 */}
             <img
               src={mainProfile}
-              alt="Our 365 Days"
+              alt="우리의 365일"
               className="relative w-48 h-48 rounded-full object-cover border-[6px] border-slate-900 shadow-2xl transform transition duration-500 group-hover:scale-105"
             />
 
@@ -45,7 +45,7 @@ export function Welcome({ message }: { message: string }) {
                     className="group flex items-center gap-4 rounded-xl bg-white/5 p-4 transition-all duration-300 hover:bg-pink-500/10 hover:shadow-lg hover:scale-[1.02] border border-transparent hover:border-pink-500/30"
                     href={href}
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                   >
                     {/* 아이콘 박스: 핑크색 포인트 */}
                     <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-white/10 text-gray-300 transition-colors group-hover:bg-pink-500 group-hover:text-white">
@@ -58,7 +58,7 @@ export function Welcome({ message }: { message: string }) {
                     </span>
 
                     {/* 화살표 */}
-                    <svg className="h-5 w-5 text-gray-500 transition-transform group-hover:translate-x-1 group-hover:text-pink-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg aria-hidden="true" className="h-5 w-5 text-gray-500 transition-transform group-hover:translate-x-1 group-hover:text-pink-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </a>
@@ -84,7 +84,7 @@ const resources = [
     href: "https://www.notion.so/2e3ad104dcd2809a885ae5c7b2f2838b?source=copy_link",
     text: "노션",
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M4 4h16v16H4V4z" />
         <path d="M9 9h6M9 13h6M9 17h4" />
       </svg>
@@ -94,7 +94,7 @@ const resources = [
     href: "https://docs.google.com/spreadsheets/d/1YeCNpMIq4gUblUnRmWw9AzabphfDZMnJ/edit?gid=599314211#gid=599314211",
     text: "견적",
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M3 3h12l6 6v12H3V3z" />
         <path d="M7 10h10M7 14h10M7 18h6" />
       </svg>
@@ -104,9 +104,9 @@ const resources = [
     href: "https://blog.naver.com/qls1106",
     text: "블로그",
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M4 4h16v16H4V4z" />
-        <path d="M9 9h6M9 13h6M9 17h4" />
+      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 20h9" />
+        <path d="M16.5 3.5a2.121 2.121 0 1 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
       </svg>
     ),
   },
