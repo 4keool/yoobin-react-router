@@ -1,6 +1,6 @@
 import mainProfile from "./Logo.jpeg"; // 사진 파일이 같은 폴더에 있어야 합니다.
 
-export function Welcome({ message }: { message: string }) {
+export function Welcome({ message }: { message?: string }) {
   return (
     // 배경: 은은한 밤하늘 느낌 (슬레이트 ~ 블랙)
     <main className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-slate-900 via-gray-900 to-black text-white p-4">
@@ -67,11 +67,13 @@ export function Welcome({ message }: { message: string }) {
             </ul>
 
             {/* 하단 메시지 */}
-            <div className="mt-6 pt-6 border-t border-white/10 text-center">
-              <span className="inline-block rounded-full bg-pink-500/10 px-3 py-1 text-xs font-medium text-pink-400 border border-pink-500/20">
-                ✨ {message}
-              </span>
-            </div>
+            {message ? (
+              <div className="mt-6 pt-6 border-t border-white/10 text-center">
+                <span className="inline-block rounded-full bg-pink-500/10 px-3 py-1 text-xs font-medium text-pink-400 border border-pink-500/20">
+                  ✨ {message}
+                </span>
+              </div>
+            ) : null}
           </nav>
         </div>
       </div>
